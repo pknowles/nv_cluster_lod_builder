@@ -1,11 +1,11 @@
 # nv_cluster_lod_builder <!-- omit from toc -->
 
-> [!IMPORTANT]
-> This repository has been archived and is no longer maintained by NVIDIA. It
-> was an R&D project to provide a simple and quick start for ray tracing
-> continuous LOD with
-> [nv_cluster_builder](https://github.com/nvpro-samples/nv_cluster_builder). For
-> similar actively maintained code, please refer to
+> [!NOTE]
+> **This repository is now independently maintained by me, one of the original
+> NVIDIA developers.** It is forked from the original
+> [nv_cluster_lod_builder](https://github.com/nvpro-samples/nv_cluster_lod_builder).
+> Users are welcome to submit issues, pull requests, and suggestions. For an
+> alternative, similar LOD building code can be found in
 > [`meshoptimizer/demo/clusterlod.h`](https://github.com/zeux/meshoptimizer/blob/master/demo/clusterlod.h).
 
 ![](doc/lod_stitch.svg)
