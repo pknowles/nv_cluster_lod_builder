@@ -93,6 +93,7 @@ public:
   Stopwatch([[maybe_unused]] T&& t)
   {
   }
+  ~Stopwatch() {}  // avoid unused variable warning
 #endif
 };
 
