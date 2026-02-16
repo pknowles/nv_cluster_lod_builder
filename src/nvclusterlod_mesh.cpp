@@ -67,8 +67,9 @@ static constexpr float    NVLOD_VERTEX_WEIGHT_MULTIPLIER        = 10.f;
 #include <string>
 #endif
 
+namespace nvclusterlod {
 
-class Stopwatch
+class [[maybe_unused]] Stopwatch
 {
 #if PRINT_PERF
 public:
@@ -90,14 +91,9 @@ private:
 #else
 public:
   template <class T>
-  Stopwatch([[maybe_unused]] T&& t)
-  {
-  }
-  ~Stopwatch() {}  // avoid unused variable warning
+  [[nodiscard]] constexpr Stopwatch(T&&) noexcept {}
 #endif
 };
-
-namespace nvclusterlod {
 
 using nvcluster::vec3f;
 using nvcluster::vec3u;
